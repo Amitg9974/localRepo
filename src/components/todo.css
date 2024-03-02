@@ -1,0 +1,111 @@
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+}
+
+.todo_input input{
+    height: 20px;
+    width: 20pc;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.add-btn{
+    background-color: #9b78f5;
+    color: white;
+    border-radius: 20px;
+    font-size: 35px;
+    right: -15%;
+    height: 40px;
+    width: 12%;
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden; 
+    border: 2px solid transparent;
+}
+
+.add-btn:hover {
+    background-color: yellow;
+    color: black;
+    font-size: 40px;
+}
+
+.add-btn:hover::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 50%; 
+    animation: borderAnimation 3s linear infinite;
+}
+
+.add-btn:hover::after {
+    content: 'Click me';
+    position: absolute;
+    color: #000;
+    left: 100%;
+    top: 0;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  
+
+@keyframes borderAnimation {
+    0% {
+        transform: rotate(0deg); /* Start with no rotation */
+        border-color: red; /* Set the border color to dark at the starting point */
+    }
+    25% {
+        transform: rotate(180deg); /* Rotate halfway (180 degrees) */
+        border-color: greenyellow; /* Keep the border color dark */
+    }
+    50% {
+        transform: rotate(270deg); /* Rotate halfway (180 degrees) */
+        border-color: #000; /* Keep the border color dark */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotate to the ending point (360 degrees) */
+        border-color: #fff; /* Set the border color to light at the ending point */
+    }
+}
+
+.ul_list{
+    position: absolute;
+    top: 5pc;
+    display: flex;
+    align-items: center;
+}
+.ul_list p{
+    border: 2px solid grey;
+    border-radius: 5px;
+    background: white;
+    height: 20px;
+    width: 20pc;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    display: flex;
+}
+
+.ul_list i{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
