@@ -3,19 +3,19 @@ import "./App.css";
 import Register from "./components/register";
 import Login from "./components/login";
 import Profile from "./components/profile";
-import Todo from "./components/todo";
+import Todo from "./components/todo1";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
-      </Router>
-      {/* <Todo/> */}
+      </Router> */}
+      <Todo/>
     </div>
   );
 }
