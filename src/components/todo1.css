@@ -1,0 +1,57 @@
+.contain {
+  margin-top: 20px;
+}
+.input {
+  height: 10%;
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button {
+  margin-left: 20px;
+  border-radius: 12px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: blue;
+  color: white;
+}
+
+.todo_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list {
+  background: #e5dddd;
+  width: 25%;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close {
+  color: red;
+  background: white;
+  padding: 5px;
+  font-size: 17px;
+  /* height: 5%; */
+  width: 6%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: red;
+  color: white;
+}
