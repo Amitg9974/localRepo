@@ -3,7 +3,7 @@ import "./App.css";
 import Register from "./components/register";
 import Login from "./components/login";
 import Profile from "./components/profile";
-import Todo from "./components/todo1";
+import Todo from "./components/test2";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
